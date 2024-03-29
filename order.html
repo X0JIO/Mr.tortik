@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/order.css" />
+    <title>Mr.tortik</title>
+  </head>
+  <body>
+    <main>
+      <nav class="navbar">
+        <div>
+          <img class="navbar__image__logo" src="img/logo/logo.jpg" alt="logo" />
+          <h2 class="navbar__text">Mr.tortik</h2>
+        </div>
+        <div class="navbar__link">
+          <h2>
+            <a class="navbar__link__style" href="index.html">Главная</a>
+            <a class="navbar__link__style" href="catalog.html">Каталог</a>
+            <a class="navbar__link__style active" href="order.html">Заказать</a>
+						<a class="navbar__link__style" href="priseList.html">Прайс лист <a>
+            <a class="navbar__link__style" href="#">Отзывы</a>
+          </h2>  
+        </div>
+        <div class='nav__button'>
+          <button class='button__style'>Категории</button>
+          <ul class="list list__hidden">
+            <li class='list__style'>
+              <a class="navbar__list__style" href="index.html">Главная</a>
+            </li>
+            <li class='list__style'>
+              <a class="navbar__list__style" href="catalog.html">Каталог</a>
+            </li>
+            <li class='list__style'>
+              <a class="navbar__list__style" href="order.html">Заказать</a>
+            </li>
+            <li class='list__style'>
+              <a class="navbar__list__style" href="priseList.html">Прайс лист</a>
+            </li>
+						<li class='list__style'>
+              <a class="navbar__list__style" href="#">Отзывы</a>
+            </li>
+          </ul>
+        </div>
+			</nav>
+     <div class='forms'>
+			<!-- /////////////////////////////////////////////////////////// -->
+			<form action="#" method='POST' id='form' class='form__main'>
+				<h1 class="form__title__one">Заполните форму для заказа</h1>
+				<h2 class='form__title__two'>Введите свои данные</h2>
+				<div class='form__item'>
+					<label for="formName" class='label__form'>Имя:</label>
+					<input id='formName' type="text" name='name' class='input__form _req'>
+				</div>
+				<div class='form__item'>
+					<label for="formPhone" class='label__form'>Номер:</label>
+					<input id='formPhone' type="number" name='Phone' class='input__form _req'>
+				</div>
+				<div class='form__title__three'>
+					<h2 class="text__three">Выберите десерт и начинку</h2>
+				</div>
+				<div class='form__item'>
+					<label for="formCake" class='label__form'>Вид десерта:</label>
+					<input id='formCake' type="text" name='cake' class='input__form'>
+				</div>
+				<div class='form__item'>
+					<label for="formCakeIngredients" class='label__form'>Начинка:</label>
+					<input id='formCakeIngredients' type="text" name='ingredients' class='input__form'>
+				</div>
+				<div class='form__item'>
+					<div class="form__label">Вы можете прикрепить фото декора, <br>который бы вы хотели видеть у себя на дессерте</div>
+					<div class="file">
+						<div class="file__item">
+							<input id='formImage' accept='.jpg, .img, .gif' type="file" name='image' class='file__input'>
+							<div class="file__button">Выбрать фото</div>
+						</div>
+						<div id='filePreview' class='file__preview'></div>
+					</div>
+				</div>
+				<button type='submit' class="form__button">Заказать!</button>
+			</form>
+			<!-- /////////////////////////////////////////////////////////// -->
+		 </div>
+    </main>
+    <footer>
+      <h2>Mr.tortik</h2>
+      <div class="footer__style">
+        <li>
+          <a target='_blank' href="https://vk.com/mr.tortikk">
+            <img class="footer__photos" src="img/logo/vkontakte.png" alt="logo">
+          </a>
+      </li>
+      <li>
+        <a target='_blank' href="https://www.avito.ru/moskovskaya_oblast_rozhdestveno/predlozheniya_uslug/otkrytyy_medovik_tsifra_3622801910?utm_campaign=native&utm_medium=item_page_ios&utm_source=soc_sharing_seller">
+          <img class="footer__photos" src="img/logo/avito.png" alt="logo">
+        </a>
+    </li>
+    <li>
+      <a href="#">
+        <img target='_blank' class="footer__photos" src="img/logo/whatsapp.png" alt="logo">
+      </a>
+  </li>
+    </ul>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<script src='js/order.js'></script>
+    <script src='js/button.js'></script>
+  </body>
+</html>
